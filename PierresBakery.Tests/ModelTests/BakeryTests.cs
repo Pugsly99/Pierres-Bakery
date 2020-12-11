@@ -54,7 +54,7 @@ namespace PierresBakery.Tests
       PastryBakery newBakery = new PastryBakery();
       newBakery.Pastry(amount);
       int pastry = newBakery.PastryPrice;
-      Assert.AreEqual(17, pastry);
+      Assert.AreEqual(14, pastry);
     }
 
     [TestMethod]
@@ -64,7 +64,7 @@ namespace PierresBakery.Tests
       PastryBakery newBakery = new PastryBakery();
       newBakery.Pastry(amount);
       int pastry = newBakery.PastryPrice;
-      Assert.AreEqual(19, pastry);
+      Assert.AreEqual(16, pastry);
     }
 
     [TestMethod]
