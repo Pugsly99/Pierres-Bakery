@@ -17,6 +17,7 @@ namespace PierresBakery.Tests
       Assert.AreEqual(55, price);
     }
 
+    [TestMethod]
     public void Bread_EvenReturnsAmountPrice_Int()
     {
       int amount = 10;
@@ -36,6 +37,7 @@ namespace PierresBakery.Tests
       Assert.AreEqual(16, loaves);
     }
 
+    [TestMethod]
       public void Bread_EvenReturnsBreadAmount_Int()
     {
       int amount = 10;
@@ -46,9 +48,13 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-    public void Pastry_ReturnsAmountPrice_Int()
+    public void Pastry_EvenReturnsAmountPrice_Int()
     {
-      
+      int amount = 10;
+      Bakery newBakery = new Bakery();
+      newBakery.Pastry(amount);
+      int pastry = newBakery.PastryPrice;
+      Assert.AreEqual(15, pastry);
     }
   }
 }
