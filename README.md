@@ -89,9 +89,13 @@ _If you have any questions, ideas or concerns, please, contact us:_
   </tr>
   <tr>
     <td>1</td>
-    <td>Should correctly create instance of ChangeWord</td>
-    <td>"Hello World, "word" "universe"</td>
-    <td>Change newRequest = new ChangeWord("Hello World", "word", "universe")</td>
+    <td>Should correctly take in amounts of desired product and return price and free product included with purchase</td>
+    <td>Bread: 3  Pastry: 11</td>
+    <td>Pastry Received: 11
+        Pastry Price: 19$
+        Bread Received: 4
+        Bread Price: 15$
+        Your total today will be: 34$</td>
     <td>True</td>
   </tr>
 </table>
