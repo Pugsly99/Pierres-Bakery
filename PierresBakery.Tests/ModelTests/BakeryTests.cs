@@ -10,7 +10,10 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void Bread_ReturnsAmountPrice_Int()
     {
-
+      int amount = 11;
+      Bakery newBakery = new Bakery();
+      int price = newBakery.BreadPrice;
+      Assert.AreEqual(amount, price);
     }
 
     [TestMethod]
