@@ -9,7 +9,7 @@ namespace PierresBakery.Models
     public static void Main()
     {
       Console.WriteLine("Welcome to Pierres Bakery.");
-      Console.WriteLine("We currently offer Pastrys and Bread!");
+      Console.WriteLine("We offer Pastrys and Bread!");
       Console.WriteLine("Here are our deals currently:");
       Console.WriteLine("Bread - Buy 2, get 1 free. A single loaf costs $5.");
       Console.WriteLine("Pastry's - Buy 1 for $2 or 3 for $5.");
@@ -35,11 +35,11 @@ namespace PierresBakery.Models
       breadPrice = newBakery.BreadPrice;
       breadAmount = newBakery.BreadAmount;
 
-      Console.WriteLine("Pastry Price: " + pastryPrice + "$");
       Console.WriteLine("Pastry Received: " + pastryAmount);
+      Console.WriteLine("Pastry Price: " + pastryPrice + "$");
 
-      Console.WriteLine("Bread Price: " + breadPrice + "$");
       Console.WriteLine("Bread Received: " + breadAmount);
+      Console.WriteLine("Bread Price: " + breadPrice + "$");
 
       int total = breadPrice + pastryPrice;
       Console.WriteLine("Your total today will be: " + total + "$");
