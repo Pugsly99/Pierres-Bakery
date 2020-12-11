@@ -20,7 +20,7 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void Bread_ReturnsBreadAmount_Int()
     {
-      int amount = 10;
+      int amount = 11;
       Bakery newBakery = new Bakery();
       newBakery.Bread(amount);
       int loaves = newBakery.BreadAmount;
