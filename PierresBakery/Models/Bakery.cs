@@ -17,7 +17,6 @@ namespace PierresBakery
         BreadPrice = amount * 5;
         amount += free;
         BreadAmount = amount;
-
       }
       else if (amount % 2 == 0)
       {
@@ -34,7 +33,7 @@ namespace PierresBakery
 
     public int PastryAmount { get; set; }
     public int PastryPrice { get; set; }
-    
+
     public void Pastry(int amount)
     {
       int deal = 0;
