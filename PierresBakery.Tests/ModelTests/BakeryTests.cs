@@ -56,5 +56,15 @@ namespace PierresBakery.Tests
       int pastry = newBakery.PastryPrice;
       Assert.AreEqual(17, pastry);
     }
+
+    [TestMethod]
+    public void Pastry_OddReturnsAmountPrice_Int()
+    {
+      int amount = 11;
+      Bakery newBakery = new Bakery();
+      newBakery.Pastry(amount);
+      int pastry = newBakery.PastryPrice;
+      Assert.AreEqual(17, pastry);
+    }
   }
 }
