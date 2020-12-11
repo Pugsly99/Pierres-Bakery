@@ -23,7 +23,7 @@ namespace PierresBakery.Tests
       Bakery newBakery = new Bakery();
       newBakery.Bread(amount);
       int price = newBakery.BreadPrice;
-      Assert.AreEqual(45, price);
+      Assert.AreEqual(50, price);
     }
 
     [TestMethod]
