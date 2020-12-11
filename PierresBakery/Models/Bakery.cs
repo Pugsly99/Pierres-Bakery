@@ -38,7 +38,17 @@ namespace PierresBakery
     {
       int deal = 0;
       int nondeal = 0;
-      if (amount >= 3)
+      if (amount >= 5)
+      {
+        PastryAmount = amount;
+        nondeal = amount % 5;
+        deal = amount - nondeal;
+        deal = deal / 5;
+        deal = deal * 7; 
+        nondeal = nondeal * 2;
+        PastryPrice = deal + nondeal;
+      }
+      else if (amount >= 3)
       {
         PastryAmount = amount;
         nondeal = amount % 3;
