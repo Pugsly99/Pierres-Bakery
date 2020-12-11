@@ -12,7 +12,7 @@ namespace PierresBakery.Models
       Console.WriteLine("We currently offer Pastrys and Bread!");
       Console.WriteLine("Here are our deals currently:");
       Console.WriteLine("Bread - Buy 2, get 1 free. A single loaf costs $5.");
-      Console.WriteLine("Bread Received: " + breadAmount);
+      Console.WriteLine("Pastry's - Buy 1 for $2 or 3 for $5.");
       Console.WriteLine("--------------------------------------------------");
 
       Console.WriteLine("How many Pastry's would you like?");
