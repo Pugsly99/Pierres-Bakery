@@ -25,15 +25,16 @@ namespace PierresBakery.Models
       int breadPrice = 0;
       int breadAmount = 0;
 
-      Bakery newBakery = new Bakery();
+      PastryBakery pastry = new PastryBakery();
+      BreadBakery bread = new BreadBakery();
 
-      newBakery.Pastry(pastryResponse);
-      pastryPrice = newBakery.PastryPrice;
-      pastryAmount = newBakery.PastryAmount;
+      pastry.Pastry(pastryResponse);
+      pastryPrice = pastry.PastryPrice;
+      pastryAmount = pastry.PastryAmount;
 
-      newBakery.Bread(breadResponse);
-      breadPrice = newBakery.BreadPrice;
-      breadAmount = newBakery.BreadAmount;
+      bread.Bread(breadResponse);
+      breadPrice = bread.BreadPrice;
+      breadAmount = bread.BreadAmount;
 
       Console.WriteLine("Pastry Received: " + pastryAmount);
       Console.WriteLine("Pastry Price: " + pastryPrice + "$");

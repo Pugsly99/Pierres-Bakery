@@ -1,12 +1,10 @@
 namespace PierresBakery
 {
-  public class Bakery
+  public class BreadBakery
   {
 
     public int BreadAmount { get; set; }
     public int BreadPrice { get; set; }
-    public int PastryAmount { get; set; }
-    public int PastryPrice { get; set; }
 
     public void Bread(int amount)
     {
@@ -29,7 +27,14 @@ namespace PierresBakery
         BreadAmount = amount;
       }
     }
+  }
 
+  public class PastryBakery
+  {
+
+    public int PastryAmount { get; set; }
+    public int PastryPrice { get; set; }
+    
     public void Pastry(int amount)
     {
       int deal = 0;
@@ -53,4 +58,4 @@ namespace PierresBakery
       }
     }
   }
-}
+} 
