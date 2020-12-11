@@ -8,7 +8,7 @@ namespace PierresBakery.Tests
   {
     
     [TestMethod]
-    public void Bread_ReturnsAmountPrice_Int()
+    public void Bread_OddReturnsAmountPrice_Int()
     {
       int amount = 11;
       Bakery newBakery = new Bakery();
