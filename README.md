@@ -1,6 +1,6 @@
 # <span style="color:#0ec2b8">_Pierres Bakery_</span>
 
-#### _Console application for a bakery that includes deals and prices based off of the amount of each you want, 12/11/2020_
+#### _12/11/2020_
 
 #### By _**Ryland Adams**_
 
