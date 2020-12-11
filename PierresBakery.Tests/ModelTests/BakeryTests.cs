@@ -18,13 +18,22 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-    public void Bread_ReturnsBreadAmount_Int()
+    public void Bread_OddReturnsBreadAmount_Int()
     {
       int amount = 11;
       Bakery newBakery = new Bakery();
       newBakery.Bread(amount);
       int loaves = newBakery.BreadAmount;
-      Assert.AreEqual(amount, loaves);
+      Assert.AreEqual(16, loaves);
+    }
+
+      public void Bread_EvenReturnsBreadAmount_Int()
+    {
+      int amount = 10;
+      Bakery newBakery = new Bakery();
+      newBakery.Bread(amount);
+      int loaves = newBakery.BreadAmount;
+      Assert.AreEqual(15, loaves);
     }
 
     [TestMethod]
