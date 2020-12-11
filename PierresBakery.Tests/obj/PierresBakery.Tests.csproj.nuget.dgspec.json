@@ -1,0 +1,124 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Ryland\\Desktop\\PierresBakery.Solution\\PierresBakery.Tests\\PierresBakery.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Ryland\\Desktop\\PierresBakery.Solution\\PierresBakery.Tests\\PierresBakery.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ryland\\Desktop\\PierresBakery.Solution\\PierresBakery.Tests\\PierresBakery.Tests.csproj",
+        "projectName": "PierresBakery.Tests",
+        "projectPath": "C:\\Users\\Ryland\\Desktop\\PierresBakery.Solution\\PierresBakery.Tests\\PierresBakery.Tests.csproj",
+        "packagesPath": "C:\\Users\\Ryland\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ryland\\Desktop\\PierresBakery.Solution\\PierresBakery.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ryland\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Ryland\\Desktop\\PierresBakery.Solution\\PierresBakery\\PierresBakery.csproj": {
+                "projectPath": "C:\\Users\\Ryland\\Desktop\\PierresBakery.Solution\\PierresBakery\\PierresBakery.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.0.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Ryland\\Desktop\\PierresBakery.Solution\\PierresBakery\\PierresBakery.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ryland\\Desktop\\PierresBakery.Solution\\PierresBakery\\PierresBakery.csproj",
+        "projectName": "PierresBakery",
+        "projectPath": "C:\\Users\\Ryland\\Desktop\\PierresBakery.Solution\\PierresBakery\\PierresBakery.csproj",
+        "packagesPath": "C:\\Users\\Ryland\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ryland\\Desktop\\PierresBakery.Solution\\PierresBakery\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ryland\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
