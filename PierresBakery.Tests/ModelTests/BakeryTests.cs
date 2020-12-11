@@ -74,7 +74,7 @@ namespace PierresBakery.Tests
       Bakery newBakery = new Bakery();
       newBakery.Pastry(amount);
       int pastry = newBakery.PastryPrice;
-      Assert.AreEqual(5, pastry);
+      Assert.AreEqual(4, pastry);
     }
   }
 }
