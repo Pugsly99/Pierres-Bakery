@@ -14,7 +14,17 @@ namespace PierresBakery.Tests
       Bakery newBakery = new Bakery();
       newBakery.Bread(amount);
       int price = newBakery.BreadPrice;
-      Assert.AreEqual(amount, price);
+      Assert.AreEqual(50, price);
+    }
+
+    [TestMethod]
+    public void Bread_ReturnsBreadAmount_Int()
+    {
+      int amount = 10;
+      Bakery newBakery = new Bakery();
+      newBakery.Bread(amount);
+      int loaves = newBakery.BreadAmount;
+      Assert.AreEqual(amount, loaves);
     }
 
     [TestMethod]
