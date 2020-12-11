@@ -11,7 +11,7 @@ namespace PierresBakery.Tests
     public void Bread_OddReturnsAmountPrice_Int()
     {
       int amount = 11;
-      Bakery newBakery = new Bakery();
+      BreadBakery newBakery = new BreadBakery();
       newBakery.Bread(amount);
       int price = newBakery.BreadPrice;
       Assert.AreEqual(55, price);
@@ -21,7 +21,7 @@ namespace PierresBakery.Tests
     public void Bread_EvenReturnsAmountPrice_Int()
     {
       int amount = 10;
-      Bakery newBakery = new Bakery();
+      BreadBakery newBakery = new BreadBakery();
       newBakery.Bread(amount);
       int price = newBakery.BreadPrice;
       Assert.AreEqual(50, price);
@@ -31,7 +31,7 @@ namespace PierresBakery.Tests
     public void Bread_OddReturnsBreadAmount_Int()
     {
       int amount = 11;
-      Bakery newBakery = new Bakery();
+      BreadBakery newBakery = new BreadBakery();
       newBakery.Bread(amount);
       int loaves = newBakery.BreadAmount;
       Assert.AreEqual(16, loaves);
@@ -41,7 +41,7 @@ namespace PierresBakery.Tests
     public void Bread_EvenReturnsBreadAmount_Int()
     {
       int amount = 10;
-      Bakery newBakery = new Bakery();
+      BreadBakery newBakery = new BreadBakery();
       newBakery.Bread(amount);
       int loaves = newBakery.BreadAmount;
       Assert.AreEqual(15, loaves);
@@ -51,7 +51,7 @@ namespace PierresBakery.Tests
     public void Pastry_EvenReturnsAmountPrice_Int()
     {
       int amount = 10;
-      Bakery newBakery = new Bakery();
+      PastryBakery newBakery = new PastryBakery();
       newBakery.Pastry(amount);
       int pastry = newBakery.PastryPrice;
       Assert.AreEqual(17, pastry);
@@ -61,7 +61,7 @@ namespace PierresBakery.Tests
     public void Pastry_OddReturnsAmountPrice_Int()
     {
       int amount = 11;
-      Bakery newBakery = new Bakery();
+      PastryBakery newBakery = new PastryBakery();
       newBakery.Pastry(amount);
       int pastry = newBakery.PastryPrice;
       Assert.AreEqual(19, pastry);
@@ -71,17 +71,27 @@ namespace PierresBakery.Tests
     public void Pastry_LessThan3ReturnsAmountPrice_Int()
     {
       int amount = 2;
-      Bakery newBakery = new Bakery();
+      PastryBakery newBakery = new PastryBakery();
       newBakery.Pastry(amount);
       int pastry = newBakery.PastryPrice;
       Assert.AreEqual(4, pastry);
+    }
+
+      [TestMethod]
+    public void Pastry_MoreThan5ReturnsAmountPrice_Int()
+    {
+      int amount = 5;
+      PastryBakery newBakery = new PastryBakery();
+      newBakery.Pastry(amount);
+      int pastry = newBakery.PastryPrice;
+      Assert.AreEqual(5, pastry);
     }
 
     [TestMethod]
     public void Pastry_ReturnsPastryAmount_Int()
     {
       int amount = 2;
-      Bakery newBakery = new Bakery();
+      PastryBakery newBakery = new PastryBakery();
       newBakery.Pastry(amount);
       int pastry = newBakery.PastryAmount;
       Assert.AreEqual(2, pastry);
