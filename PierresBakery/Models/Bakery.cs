@@ -3,43 +3,53 @@ namespace PierresBakery
   public class Bakery
   {
 
-    public int Bread { get; set; }
+    public int BreadAmount { get; set; }
     public int BreadPrice { get; set; }
-    public int Pastry { get; set; }
+    public int PastryAmount { get; set; }
     public int PastryPrice { get; set; }
 
-    public Bread(int amount)
+    public void Bread(int amount)
     {
       int free = 0;
-      if (amount / 2 != 0)
-      {
-        amount -= 1;
-        free = amount / 2;
-        BreadPrice = amount * 5;
-        amount = free + 1;
-        Bread = amount;
-
-      }
-      else if (amount / 2 == 0)
-      {
-        free = amount / 2;
-        BreadPrice = amount * 5;
-        amount = free;
-        Bread = amount;
-      }
-    }
-
-    public Pastry(int amount)
-    {
       if (amount % 2 != 0)
       {
         amount -= 1;
-        
+        free = amount / 2;
+        amount += 1;
+        BreadPrice = amount * 5;
+        amount += free;
+        BreadAmount = amount;
 
+      }
+      else if (amount % 2 == 0)
+      {
+        free = amount / 2;
+        BreadPrice = amount * 5;
+        amount += free;
+        BreadAmount = amount;
+      }
+    }
+
+    public void Pastry(int amount)
+    {
+      int deal = 0;
+      int nondeal = 0;
+      if (amount >= 3)
+      {
+        PastryAmount = amount;
+        nondeal = amount % 3;
+        deal = amount - nondeal;
+        deal = deal / 3;
+        deal = deal * 5; 
+        nondeal = nondeal * 2;
+        PastryPrice = deal + nondeal;
+        
       }
       else 
       {
-
+        PastryAmount = amount;
+        nondeal = amount * 2;
+        PastryPrice = nondeal;
       }
     }
   }
