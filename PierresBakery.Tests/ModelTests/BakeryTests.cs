@@ -38,7 +38,7 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-      public void Bread_EvenReturnsBreadAmount_Int()
+    public void Bread_EvenReturnsBreadAmount_Int()
     {
       int amount = 10;
       Bakery newBakery = new Bakery();
