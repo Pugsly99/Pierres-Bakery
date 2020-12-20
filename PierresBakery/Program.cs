@@ -1,7 +1,7 @@
-using PierresBakery;
+using PierresBakery.Models;
 using System;
 
-namespace PierresBakery.Models
+namespace PierresBakery
 {
 
   public class Program
@@ -26,8 +26,8 @@ namespace PierresBakery.Models
       int breadPrice = 0;
       int breadAmount = 0;
 
-      PastryBakery pastry = new PastryBakery();
-      BreadBakery bread = new BreadBakery();
+      PastryOrder pastry = new PastryOrder();
+      BreadOrder bread = new BreadOrder();
 
       pastry.Pastry(pastryResponse);
       pastryPrice = pastry.PastryPrice;
