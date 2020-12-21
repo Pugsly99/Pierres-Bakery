@@ -17,33 +17,25 @@ namespace PierresBakery
       Console.WriteLine("--------------------------------------------------");
 
       Console.WriteLine("How many Pastry's would you like?");
-      int pastryResponse = int.Parse(Console.ReadLine());
-      int pastryPrice = 0;
-      int pastryAmount = 0;
+      int pastryWanted = int.Parse(Console.ReadLine());
 
       Console.WriteLine("How many loaves of Bread would you like?");
-      int breadResponse = int.Parse(Console.ReadLine());
-      int breadPrice = 0;
-      int breadAmount = 0;
+      int breadWanted = int.Parse(Console.ReadLine());
 
       PastryOrder pastry = new PastryOrder();
       BreadOrder bread = new BreadOrder();
 
-      pastry.Pastry(pastryResponse);
-      pastryPrice = pastry.PastryPrice;
-      pastryAmount = pastry.PastryAmount;
+      pastry.PastryCheckout(pastryWanted);
 
-      bread.Bread(breadResponse);
-      breadPrice = bread.BreadPrice;
-      breadAmount = bread.BreadAmount;
+      bread.BreadCheckout(breadWanted);
 
-      Console.WriteLine("Pastry Received: " + pastryAmount);
-      Console.WriteLine("Pastry Price: " + pastryPrice + "$");
+      Console.WriteLine("Pastry Received: " + pastry.PastryAmount);
+      Console.WriteLine("Pastry Price: " + pastry.PastryPrice + "$");
 
-      Console.WriteLine("Bread Received: " + breadAmount);
-      Console.WriteLine("Bread Price: " + breadPrice + "$");
+      Console.WriteLine("Bread Received: " +  bread.BreadAmount);
+      Console.WriteLine("Bread Price: " + bread.BreadPrice + "$");
 
-      int total = breadPrice + pastryPrice;
+      int total = bread.BreadPrice + pastry.PastryPrice;
       Console.WriteLine("Your total today will be: " + total + "$");
 
 

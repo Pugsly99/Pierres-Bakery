@@ -6,7 +6,7 @@ namespace PierresBakery.Models
     public int BreadAmount { get; set; }
     public int BreadPrice { get; set; }
 
-    public void Bread(int amount)
+    public void BreadCheckout(int amount)
     {
       int free = 0;
       if (amount % 2 != 0)

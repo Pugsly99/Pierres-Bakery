@@ -6,7 +6,7 @@ namespace PierresBakery.Models
     public int PastryAmount { get; set; }
     public int PastryPrice { get; set; }
 
-    public void Pastry(int amount)
+    public void PastryCheckout(int amount)
     {
       int deal = 0;
       int nondeal = 0;
